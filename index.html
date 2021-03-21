@@ -1,193 +1,600 @@
 <!DOCTYPE html>
 <html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
+<div id="fb-root"> </div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="23y2cFIn"></script>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
+
+  <div id="menu">
+    <ul>
+    <li><a href="#about">About Me <i class="material-icons">account_circle</i></a></li>
+    <li><a href="#photos">My Photos <i class="material-icons">insert_photo</i></a></li>
+    <li><a href="#playlist">My Playlist <i class="material-icons">library_music</i></a></li>
+    <li><a href="#like">Like <i class="material-icons">thumb_up</i></a></li>
+    <li><a href="#qrcoder">QR code <i class="material-icons">qr_code</i></a></li>
+    <li><a href="#spa">Q&A <i class="material-icons">question_answer</i></a></li>
+    <li><a href="#contact">Contact Me <i class="material-icons">email</i></a></li>
+    </ul>
+  </div>
+
+  <section id="about" class="section" >
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+    <h2> about me </h2>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+  </section>
+
+  <section id="photos" class="section">
+  
+    <br />
+    <br />
+    <br />
+    <br />
+    
+ 
+   <h2> my photos</h2>
+    <br />
+    <!-- <img src="pics\pic2.jpg" alt="pic2">
+    <img src="pics\pic1.jpg" alt="pic1">
+    <img src="pics\pic4.jpg" alt="pic4">
+    <img src="pics\pic5.jpeg" alt="pic5">
+    <img src="pics\pic.jpg" alt="pic">
+    <img src="pics\pic6.jpg" alt="pic6">
+    <img src="pics\pic7.jpg" alt="pic7"> -->
+<!-- Container for the image gallery -->
+<div class="container" >
+
+  <div class="mySlides">
+      <img src="pics/pic1.jpg">
+  </div>
+
+  <div class="mySlides">
+      <img src="pics/pic5.jpeg">
+  </div>
+
+  <div class="mySlides">
+      <img src="pics/pic6.jpg" >
+  </div>
+
+  <div class="mySlides">
+      <img src="pics/pic7.jpg" >
+  </div>
+
+  <div class="mySlides">
+      <img src="pics/pic.jpg" >
+  </div>
+  <div class="mySlides">
+    <img src="pics/pic2.jpg">
 </div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-</section>
 
 
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="pics/pic1.jpg" onclick="currentSlide(1)" alt=""
+      style="max-width:100px;
+      max-height:100px;
+      width:auto;
+      height:auto;" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/pic5.jpeg"onclick="currentSlide(2)" alt=""
+      style="max-width:100px;
+      max-height:100px;
+      width:auto;
+      height:auto;">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/pic6.jpg" onclick="currentSlide(3)" alt=""
+      style="max-width:100px;
+      max-height:100px;
+      width:auto;
+      height:auto;">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/pic7.jpg" onclick="currentSlide(4)" alt=""
+      style="max-width:100px;
+      max-height:100px;
+      width:auto;
+      height:auto;">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/pic.jpg"  onclick="currentSlide(5)" alt=""
+      style="max-width:100px;
+      max-height:100px;
+      width:auto;
+      height:auto;">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pics/pic2.jpg"onclick="currentSlide(6)" alt=""
+      style="max-width:100px;
+      max-height:100px;
+      width:auto;
+      height:auto;">
+    </div>
+  </div>
+</div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </section>
+
+  <section id="playlist" class="section" >
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h2>favorite song</h2>
+    <br />
+    <br />
+    <br />
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fahr069-fzE" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </section>
+
+  <section id="like" class="section">
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h2>give me a like</h2>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="fb-like" data-href="https://www.facebook.com/ynetnews/"
+     data-width="" data-layout="button" data-action="like" data-size="large" data-share="true"> </div>
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+  </section>
+
+  <section id="qrcoder" class="section">
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+  <h2>scan my code</h2>
+    <br />
+    <br />
+    <br />
+    <img src="pics\download.png" alt="qrcode" width="300" height="300">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </section>
+
+  <section id="spa" class="section">
+    <br />
+    <br />
+    <br />
+    <br />
+  <h2>ans</h2>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </section>
+
+  <section id="contact" class="section">
+    <br />
+    <br />
+    <br />
+    <br />
+
+  <h2>contact me</h2>
+    <br />
+    <br />
+    <br />
+
+    <form action=”mailto:dalfenchana@gmail.com method=”POST”
+
+    enctype=”multipart/form-data”
+    >
+
+      <label for="email">Email Address</label>
+      <br>
+      <input type="text" id="email" name="emailaddress" placeholder="Your email..">
+      <br>
+      <label for="subject">Subject</label>
+      <br>
+      <textarea data-emoji-picker="true" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <br>
+      <input type="submit" value="Send">
+    </form>
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </section>
+
+
+  <script type="text/javascript">
+    $(function () {
+      $("#nav a").click(function (e) {
+        e.preventDefault();
+        $('html,body').scrollTo(this.hash, this.hash);
+      });
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(document).scroll(function () {
+      $('#menu').toggle($(this).scrollTop() > 1000)
+    });​
+  </script>
+  <script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+  </script>
+
+  <!-- emoji script -->
+  <script>
+  class EmojiPicker {
+    constructor() {
+      this.initiate();
+    }
+  
+    initiate() {
+      const emojiInputs = document.querySelectorAll('[data-emoji-picker="true"]');
+  
+      emojiInputs.forEach(element => {
+        this.generateElements(element);
+      });
+    }
+  
+    generateElements(emojiInput) {
+      const clickLink = event => {
+        event.preventDefault();
+        var caretPos = emojiInput.selectionStart;
+        emojiInput.value =
+          emojiInput.value.substring(0, caretPos) +
+          " " +
+          event.target.innerHTML +
+          emojiInput.value.substring(caretPos);
+        emojiPicker.style.display = "none";
+        emojiInput.focus();
+  
+        //trigger ng-change for angular
+        if (typeof angular !== "undefined") {
+          angular.element(emojiInput).triggerHandler("change");
+        }
+      };
+  
+      emojiInput.style.width = "100%";
+  
+      const emojiContainer = document.createElement("div");
+      emojiContainer.style.position = "relative";
+  
+      const parent = emojiInput.parentNode;
+      parent.replaceChild(emojiContainer, emojiInput);
+      emojiContainer.appendChild(emojiInput);
+  
+      const emojiPicker = document.createElement("div");
+      emojiPicker.tabIndex = 0;
+  
+      emojiPicker.addEventListener(
+        "blur",
+        function(event) {
+          emojiPicker.style.display = "none";
+        },
+        false
+      );
+  
+      emojiPicker.style.position = "absolute";
+      emojiPicker.style.right = "2px";
+      emojiPicker.style.outline = "none";
+      emojiPicker.style.top = "20px";
+      emojiPicker.style.zIndex = "999";
+      emojiPicker.style.display = "none";
+      emojiPicker.style.width = "264px";
+      emojiPicker.style.padding = "7px 7px 7px 7px";
+      emojiPicker.style.marginTop = "5px";
+      emojiPicker.style.overflow = "hidden";
+      emojiPicker.style.background = "#fff";
+      emojiPicker.style.height = "200px";
+      emojiPicker.style.overflowY = "auto";
+      emojiPicker.style.boxShadow =
+        "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)";
+      emojiPicker.style.borderRadius = "2px;";
+  
+      const emojiTrigger = document.createElement("a");
+      emojiTrigger.style.position = "absolute";
+      emojiTrigger.style.top = "2px";
+      emojiTrigger.style.right = "2px";
+      emojiTrigger.style.textDecoration = "none";
+      emojiTrigger.setAttribute("href", "javascript:void(0)");
+      emojiTrigger.innerHTML =
+        '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 12 14"><path d="M8.9 8.4q-0.3 0.9-1.1 1.5t-1.8 0.6-1.8-0.6-1.1-1.5q-0.1-0.2 0-0.4t0.3-0.2q0.2-0.1 0.4 0t0.2 0.3q0.2 0.6 0.7 1t1.2 0.4 1.2-0.4 0.7-1q0.1-0.2 0.3-0.3t0.4 0 0.3 0.2 0 0.4zM5 5q0 0.4-0.3 0.7t-0.7 0.3-0.7-0.3-0.3-0.7 0.3-0.7 0.7-0.3 0.7 0.3 0.3 0.7zM9 5q0 0.4-0.3 0.7t-0.7 0.3-0.7-0.3-0.3-0.7 0.3-0.7 0.7-0.3 0.7 0.3 0.3 0.7zM11 7q0-1-0.4-1.9t-1.1-1.6-1.6-1.1-1.9-0.4-1.9 0.4-1.6 1.1-1.1 1.6-0.4 1.9 0.4 1.9 1.1 1.6 1.6 1.1 1.9 0.4 1.9-0.4 1.6-1.1 1.1-1.6 0.4-1.9zM12 7q0 1.6-0.8 3t-2.2 2.2-3 0.8-3-0.8-2.2-2.2-0.8-3 0.8-3 2.2-2.2 3-0.8 3 0.8 2.2 2.2 0.8 3z"/></svg>';
+      emojiTrigger.onclick = () => {
+        if (emojiPicker.style.display === "none") {
+          emojiPicker.style.display = "block";
+        }
+        emojiPicker.focus();
+      };
+  
+      emojiContainer.appendChild(emojiTrigger);
+  
+      const emojiList = document.createElement("ul");
+      emojiList.style.padding = "0";
+      emojiList.style.margin = "0";
+      emojiList.style.listStyle = "none";
+  
+      const emojis = [
+        0x1f600,
+        0x1f601,
+        0x1f602,
+        0x1f923,
+        0x1f603,
+        0x1f604,
+        0x1f605,
+        0x1f606,
+        0x1f609,
+        0x1f60a,
+        0x1f60b,
+        0x1f60e,
+        0x1f60d,
+        0x1f618,
+        0x1f617,
+        0x1f619,
+        0x1f61a,
+        0x1f642,
+        0x1f917,
+        0x1f929,
+        0x1f914,
+        0x1f928,
+        0x1f610,
+        0x1f611,
+        0x1f636,
+        0x1f644,
+        0x1f60f,
+        0x1f623,
+        0x1f625,
+        0x1f62e,
+        0x1f910,
+        0x1f62f,
+        0x1f62a,
+        0x1f62b,
+        0x1f634,
+        0x1f60c,
+        0x1f61b,
+        0x1f61c,
+        0x1f61d,
+        0x1f924,
+        0x1f612,
+        0x1f613,
+        0x1f614,
+        0x1f615,
+        0x1f643,
+        0x1f911,
+        0x1f632,
+        0x2639,
+        0x1f641,
+        0x1f616,
+        0x1f61e,
+        0x1f61f,
+        0x1f624,
+        0x1f622,
+        0x1f62d,
+        0x1f626,
+        0x1f627,
+        0x1f628,
+        0x1f629,
+        0x1f92f,
+        0x1f62c,
+        0x1f630,
+        0x1f631,
+        0x1f633,
+        0x1f92a,
+        0x1f635,
+        0x1f621,
+        0x1f620,
+        0x1f92c,
+        0x1f637,
+        0x1f912,
+        0x1f915,
+        0x1f922,
+        0x1f92e,
+        0x1f927,
+        0x1f607,
+        0x1f920,
+        0x1f925,
+        0x1f92b,
+        0x1f92d,
+        0x1f9d0,
+        0x1f913,
+        0x1f608,
+        0x1f47f,
+        0x1f921,
+        0x1f479,
+        0x1f47a,
+        0x1f480,
+        0x2620,
+        0x1f47b,
+        0x1f47d,
+        0x1f47e,
+        0x1f916,
+        0x1f4a9,
+        0x1f63a,
+        0x1f638,
+        0x1f639,
+        0x1f63b,
+        0x1f63c,
+        0x1f63d,
+        0x1f640,
+        0x1f63f,
+        0x1f63e,
+        0x1f648,
+        0x1f649,
+        0x1f64a,
+        0x1f476,
+        0x1f9d2,
+        0x1f466,
+        0x1f467,
+        0x1f9d1,
+        0x1f468,
+        0x1f469,
+        0x1f9d3,
+      ];
+  
+      emojis.map(item => {
+        const emojiLi = document.createElement("li");
+        emojiLi.style.display = "inline-block";
+        emojiLi.style.margin = "5px";
+  
+        const emojiLink = document.createElement("a");
+        emojiLink.style.textDecoration = "none";
+        emojiLink.style.margin = "5px";
+        emojiLink.style.position = "initial";
+        emojiLink.style.fontSize = "24px";
+        emojiLink.setAttribute("href", "javascript:void(0)");
+        emojiLink.innerHTML = String.fromCodePoint(item);
+        emojiLink.onmousedown = clickLink;
+  
+        emojiList.appendChild(emojiLink);
+      });
+  
+      emojiPicker.appendChild(emojiList);
+      emojiContainer.appendChild(emojiPicker);
+    }
+  }
+  
+  module.exports = EmojiPicker;
+  </script>
+    <script>
+      (() => {
+        new EmojiPicker()
+      })()
+    </script>
 </body>
+
 </html>
