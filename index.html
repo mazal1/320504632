@@ -32,13 +32,13 @@
 
     <br>
     <h5>
-      Paula was born in 1935 in Montreal, Canada.  She married David and had 3 daughters. 
+      Paula was born in 1934 in Montreal, Canada.  She married David and had 3 daughters. 
       <br>
       She was a beloved school teacher and loved her family and work very much. 
       <br>
       Summers were spent as camp mother and this was an added fun and exciting time in her life. 
       <br>
-      At age 56 she was widowed. He is missed every day.
+      At age 58 she was widowed. He is missed every day.
       <br>
 
     She made Aliya at age 82(!), started a new life in Israel, where she has 2 daughters  & son-in-laws, 7 grandchildren and 8 great-grandchildren.
@@ -283,20 +283,22 @@ data-width="" data-layout="button" data-action="like" data-size="large" data-sha
   <h2>contact me</h2>
     <br />
     <br />
-    <br />
-    <div>
-    <form action=”mailto:dalfenchana@gmail.com method=”POST” enctype=”text/plain”>
+    <div class="form-popup" id="contact_form">
+      <form method="POST" action="mailto:dalfenchana@gmail.com" class="form-container" enctype="text/plain">
+    
+        
+        <label for="email"><b>Email</b></label>
+      </br>
+        <input id="email_field" type="text" placeholder="Your email..." name="email">
+      </br>
+        <label for="subject"><b>Subject</b></label>
+        <br> <textarea data-emoji-picker="true" id="subject" name="subject" rows="10" cols="30" maxlength="100" placeholder="Write something..."></textarea>
+    </br>
+    
+        <button type="submit" class="btn send">Send</button>
+        <button type="reset"  class="btn reset">Clear</button> 
 
-      <label for="name">Full Name</label>
-      <br>
-      <input type="text" id="name" name="name" placeholder="Your name..">
-      <br>
-      <label for="subject">Subject</label>
-      <br>
-      <textarea data-emoji-picker="true" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      <br>
-      <input type="submit" value="Send">
-    </form>
+      </form>
     </div>
     <br />
   </section>
